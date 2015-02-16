@@ -1,10 +1,28 @@
 <!-- <h1>Coaching#answer</h1>
 <p>Find me in app/views/coaching/answer.html.erb</p> -->
 
-<%= @your_message %>
-<p>You</p>
 
-<%= @coach_answer %>
-<p>Your coach</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-offset-3 col-lg-6 text-center">
+      <h1>Coaching: Answer from your coach</h1>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-offset-4 col-lg-4">
+      <blockquote>
+        <%= @your_message %>
+        <footer>You</footer>
+      </blockquote>
 
-<%= link_to 'Ask a new question', '/ask' %>
+      <blockquote>
+      <%= @coach_answer %>
+        <footer>Your coach</footer>
+      </blockquote>
+
+      <%= link_to 'Ask a new question', '/ask' %>
+    </div>
+  </div>
+</div>
+
+

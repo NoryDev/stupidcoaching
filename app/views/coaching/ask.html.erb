@@ -1,9 +1,21 @@
-<!-- <h1>Coaching#ask</h1>
-<p>Find me in app/views/coaching/ask.html.erb</p> -->
 
+<!-- <p>Find me in app/views/coaching/ask.html.erb</p> -->
 
-<form action="/answer">
-  <label for="question">Speak to your coach</label>
-  <input type="text" id="question" name="query" placeholder="type your question">
-  <input type="submit" value="Go on!">
-</form>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-offset-3 col-lg-6 text-center">
+      <h1>Coaching: Ask your question</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-offset-4 col-lg-4">
+      <form action="/answer">
+        <div class="form-group">
+          <label for="question">Speak to your coach</label>
+          <input type="text" id="question" class="form-control"  name="query" placeholder="type your question">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Go on!">
+      </form>
+    </div>
+  </div>
+</div>
